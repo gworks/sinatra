@@ -5,7 +5,7 @@ get '/' do
 end
 
 get '/bye' do
- "good bye bye"
+ "good bye"
 end
 
 get '/hello/:name' do
@@ -13,3 +13,4 @@ get '/hello/:name' do
   # params['name'] は 'foo' か 'bar'
   "Hello #{params['name']}!"
 end
+

@@ -5,5 +5,5 @@ get '/' do
 end
 
 get '/bye' do
- "good bte"
+ "good bye"
 end

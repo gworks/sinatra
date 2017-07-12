@@ -4,6 +4,6 @@ get '/' do
   "Hello World!"
 end
 
-get '/bye' go
+get '/bye' do
  "good bte"
 end

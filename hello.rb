@@ -26,6 +26,6 @@ get '/hello/:fname/?:lname?' do |f, l|
   "Hello #{f} #{l}"
 end
 
-get 'from/*/to/*' do |f, t|
+get '/from/*/to/*' do |f, t|
 	"from #{f} to #{t}"
 end

@@ -15,5 +15,6 @@ get '/hello/:name' do
 end
 
 get '/about' do
-  "about this web site page."
+  "about this site page."
 end
+

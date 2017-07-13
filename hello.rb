@@ -14,3 +14,6 @@ get '/hello/:name' do
   "Hello #{params['name']}!"
 end
 
+get '/about' do
+  "about this web site page."
+end

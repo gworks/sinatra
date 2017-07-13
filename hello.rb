@@ -25,3 +25,7 @@ get '/hello/:fname/?:lname?' do |f, l|
   # params['name'] は 'foo' か 'bar'
   "Hello #{f} #{l}"
 end
+
+get 'from/*/to/*' do |f, t|
+	"from #{f} to #{t}"
+end

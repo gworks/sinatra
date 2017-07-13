@@ -20,7 +20,7 @@ get '/about' do
 end
 =end
 
-get '/hello/:fname/:lname' do |f, l|
+get '/hello/:fname/?:lname?' do |f, l|
   # "GET /hello/foo" と "GET /hello/bar" にマッチ
   # params['name'] は 'foo' か 'bar'
   "Hello #{f} #{l}"

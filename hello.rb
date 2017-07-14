@@ -1,6 +1,6 @@
 require 'sinatra'
 
-get '/:name' do |n|
+get '/:name?' do |n|
 	@name = n
 	@title = "main index"
 	erb :index

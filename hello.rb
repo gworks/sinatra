@@ -1,25 +1,28 @@
 require 'sinatra'
 
+before '/admin/*' do
+    @msg = "admin area!"
+end
+
 before do
-	@auther = "kusakabe"
+    @author = "kusakabe"
 end
 
 after do
+    logger.info "page displayed successfully"
 end
 
-
-
 get '/' do
-	@title = "main index"
-	@content = "main content by " + @auther 
-	erb :index
+    @title = "main index"
+    @content = "main content by " + @author
+    erb :index
 end
 
 get '/about' do
-	@title = "about this page"
-	@content = "this page is ...  by " + @auther 
-	@email = "kusakabe@gworks.jp"
-	erb :about
+    @title = "about this page"
+    @content = "this page is ... by " + @author
+    @email = "taguchi@gmail.com"
+    erb :about
 end
 
 

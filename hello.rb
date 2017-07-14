@@ -1,11 +1,13 @@
 require 'sinatra'
 
-get '/' do
-  erb :index
+get '/:name' do |n|
+	@name = n
+	@title = "main index"
+	erb :index
 end
 
 get '/bye' do
- "good bye"
+	"good bye"
 end
 
 =begin

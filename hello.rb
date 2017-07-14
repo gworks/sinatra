@@ -1,16 +1,25 @@
 require 'sinatra'
 
+before do
+	@auther = "kusakabe"
+end
+
+after do
+end
+
+
+
 get '/' do
-    @title = "main index"
-    @content = "main content"
-    erb :index
+	@title = "main index"
+	@content = "main content by " + @auther 
+	erb :index
 end
 
 get '/about' do
-    @title = "about this page"
-    @content = "this page is ..."
-    @email = "kusakabe@gworks.jp"
-    erb :about
+	@title = "about this page"
+	@content = "this page is ...  by " + @auther 
+	@email = "kusakabe@gworks.jp"
+	erb :about
 end
 
 
